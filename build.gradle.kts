@@ -61,6 +61,10 @@ tasks.named("build") {
 	}
 }
 
+tasks.named<JavaExec>("bootRun"){
+	jvmArgs = listOf("Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:5005")
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }

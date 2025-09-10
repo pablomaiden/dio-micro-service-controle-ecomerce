@@ -15,7 +15,17 @@ public class ProductController {
 
     @GetMapping("test")
     void test(){
-        log.info("test");
+        log.info("TESTE AO");
+        log.info("TESTE AO");
+        log.info("TESTE AO");
+        log.info("TESTE AO");
+        log.info("TESTE AO");
+        log.info("TESTE AO");
+
+
+
+
+
     }
 
 }
