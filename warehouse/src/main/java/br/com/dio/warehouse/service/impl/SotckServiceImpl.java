@@ -6,6 +6,7 @@ import br.com.dio.warehouse.entity.StockEntity;
 import br.com.dio.warehouse.entity.StockStatus;
 import br.com.dio.warehouse.repository.StockRepository;
 import br.com.dio.warehouse.service.IProductChangeAvailabilityProducer;
+import br.com.dio.warehouse.service.IProductQueryService;
 import br.com.dio.warehouse.service.IProductService;
 import br.com.dio.warehouse.service.IStockService;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ import java.util.UUID;
 public class SotckServiceImpl implements IStockService {
 
     private StockRepository repository;
-    private final IProductService productService;
+    private final IProductQueryService productService;
     private final IProductChangeAvailabilityProducer producer;
 
     @Override

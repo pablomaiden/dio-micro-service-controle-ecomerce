@@ -7,7 +7,6 @@ import java.util.UUID;
 public interface IProductService {
 
     ProductEntity save(final ProductEntity entity);
-    ProductEntity findById(UUID id);
     void purchase(final UUID id);
 
 }
